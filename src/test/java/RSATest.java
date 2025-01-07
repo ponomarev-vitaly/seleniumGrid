@@ -23,7 +23,5 @@ public class RSATest {
         driver.get("https://rahulshettyacademy.com/");
         System.out.printf(driver.getTitle());
         driver.quit();
-
-
     }
 }
