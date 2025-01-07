@@ -22,6 +22,7 @@ public class GoogleTest {
 
         WebDriver driver = new RemoteWebDriver(new URI("http://192.168.1.115:4444").toURL(), caps);
         driver.get("https://www.google.com/");
+        System.out.printf(driver.getTitle());
         driver.findElement(By.name("q")).sendKeys("vitaliy ponomarev");
         driver.quit();
 

@@ -1,4 +1,3 @@
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -21,8 +20,8 @@ public class RSATest {
         // URL deprecated, URI
 
         WebDriver driver = new RemoteWebDriver(new URI("http://192.168.1.115:4444").toURL(), caps);
-        driver.get("https://www.google.com/");
-        driver.findElement(By.name("q")).sendKeys("vitaliy ponomarev");
+        driver.get("https://rahulshettyacademy.com/");
+        System.out.printf(driver.getTitle());
         driver.quit();
 
 
