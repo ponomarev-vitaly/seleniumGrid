@@ -5,13 +5,12 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
+import java.net.URL;
 
 public class GoogleTest {
 
     @Test
-    public void HomePageCheck() throws MalformedURLException, URISyntaxException {
+    public void HomePageCheck() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setBrowserName("chrome");
         // caps.setPlatform(Platform.);
@@ -20,7 +19,7 @@ public class GoogleTest {
 
         // URL deprecated, URI
 
-        WebDriver driver = new RemoteWebDriver(new URI("http://192.168.1.115:4444").toURL(), caps);
+        WebDriver driver = new RemoteWebDriver(new URL("http://192.168.1.115:4444"), caps);
         driver.get("https://www.google.com/");
         System.out.printf(driver.getTitle());
         driver.findElement(By.name("q")).sendKeys("vitaliy ponomarev");
