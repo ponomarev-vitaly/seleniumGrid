@@ -13,7 +13,7 @@ public class RSATest {
     @Test
     public void HomePageCheck() throws MalformedURLException, URISyntaxException {
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setBrowserName("chrome");
+        caps.setBrowserName("firefox");
         // caps.setPlatform(Platform.);
         // caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         // caps.setCapability(CapabilityType.BROWSER_NAME, "chrome");
