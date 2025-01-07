@@ -1,4 +1,5 @@
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
@@ -12,10 +13,10 @@ public class RSATest {
     @Test
     public void HomePageCheck() throws MalformedURLException, URISyntaxException {
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setBrowserName("firefox");
+        // caps.setBrowserName("firefox");
         // caps.setPlatform(Platform.);
         // caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-        // caps.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+        caps.setCapability(CapabilityType.BROWSER_NAME, "firefox");
 
         // URL deprecated, URI
 
